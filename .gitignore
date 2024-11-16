@@ -1,0 +1,20 @@
+/bin/
+/.settings/*.prefs
+
+
+# Ignore .idea folder (IntelliJ project files)
+.idea/
+
+# Ignore all IntelliJ module files
+*.iml
+*.iws
+
+# Ignore build directories
+/out/
+build/
+
+# Ignore Maven build files
+target/
+
+# Ignore log files
+*.log
