@@ -17,6 +17,7 @@ public class DefaultMethods implements GfG {
 //		System.out.println("Overriden");
 //	}
 
+
 }
 
 interface GfG {
