@@ -9,8 +9,7 @@ public class DefaultMethods implements GfG {
 		obj.display();
 
 	}
-	
-	//This will override
+
 //	@Override
 //	public void display() {
 //		// TODO Auto-generated method stub
