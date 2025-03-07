@@ -71,7 +71,18 @@ public class AlienDictionary {
         return order.reverse().toString();
     }
 
-    private static boolean dfs(char c, Map<Character, Set<Character>> graph, Set<Character> visited, Set<Character> cycle, StringBuilder order) {
+    /**
+     * Performs a depth-first search to detect cycles and build the topological order of characters.
+     * 
+     * @param c The current character being processed
+     * @param graph The adjacency list representation of character relationships
+     * @param visited Set of characters that have been fully processed
+     * @param cycle Set of characters in the current DFS path (used for cycle detection)
+     * @param order StringBuilder to store the topological order of characters
+     * @return true if a cycle is detected, false otherwise
+     */
+    private static boolean dfs(char c, Map<Character, Set<Character>> graph, 
+    Set<Character> visited, Set<Character> cycle, StringBuilder order) {
         if (cycle.contains(c)) return true;
         if (visited.contains(c)) return false;
 
